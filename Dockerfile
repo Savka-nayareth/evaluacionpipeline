@@ -16,7 +16,7 @@ RUN ./mvnw -q clean package -DskipTests
 
 
 # Etapa 2: Imagen final optimizada para producción
-FROM eclipse-temurin:17-jre-alpine
+FROM eclipse-temurin:25-jre-alpine
 
 RUN apk add --no-cache curl \
     && addgroup -S appgroup \
